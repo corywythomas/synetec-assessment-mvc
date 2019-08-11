@@ -6,7 +6,7 @@ using System.Web;
 
 namespace InterviewTestTemplatev2.Repositories
 {
-    public class BonusPoolRepository
+    public class BonusPoolRepository : IBonusPoolRepository
     {
         #region Fields
         private MvcInterviewV3Entities1 _bonusPoolContext;

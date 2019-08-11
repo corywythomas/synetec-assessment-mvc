@@ -8,14 +8,14 @@ using System.Web;
 
 namespace InterviewTestTemplatev2.Services
 {
-    public class BonusPoolService
+    public class BonusPoolService : IBonusPoolService
     {
         #region Fields
-        private BonusPoolRepository _bonusPoolRepository;
+        private IBonusPoolRepository _bonusPoolRepository;
         #endregion
 
         #region Constructors
-        public BonusPoolService(BonusPoolRepository bonusPoolRepository)
+        public BonusPoolService(IBonusPoolRepository bonusPoolRepository)
         {
             _bonusPoolRepository = bonusPoolRepository;
         }

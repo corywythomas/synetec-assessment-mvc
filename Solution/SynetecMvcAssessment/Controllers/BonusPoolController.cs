@@ -9,16 +9,11 @@ namespace InterviewTestTemplatev2.Controllers
 {
     public class BonusPoolController : Controller
     {
-        private BonusPoolService _bonusPoolService;
+        private IBonusPoolService _bonusPoolService;
 
-        //public BonusPoolController(BonusPoolRepository bonusPoolRepository)
-        //{
-        //    _bonusPoolRepostiory = bonusPoolRepository;
-        //}
-
-        public BonusPoolController()
+        public BonusPoolController(IBonusPoolService bonusPoolService)
         {
-            _bonusPoolService = new BonusPoolService(new BonusPoolRepository(new MvcInterviewV3Entities1()));
+            _bonusPoolService = bonusPoolService;
         }
 
         // GET: BonusPool
