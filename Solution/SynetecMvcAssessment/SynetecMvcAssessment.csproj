@@ -178,6 +178,8 @@
     <Compile Include="Models\BonusPoolCalculatorModel.cs" />
     <Compile Include="Models\BonusPoolCalculatorResultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BonusPoolRepository.cs" />
+    <Compile Include="Services\BonusPoolService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
